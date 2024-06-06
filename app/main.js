@@ -11,12 +11,10 @@ function showData(data) {
    
     data.forEach(character => { 
         if(character.image !== '') {
-        $divCards.innerHTML += `<div>
+        $divCards.innerHTML += `<div class="card">
         <h4>${character.name}</h4>
         <img class="imgCards" src="${character.image}" alt="imagen de ${character.name}">
         <p>Casa: ${character.house}</p>
-        <p>Nacimiento: ${character.dateOfBirth}</p>
-        <p>Genero: ${character.gender}</p>
         <p>Actor: ${character.actor}</p>
         </div>
         `;
