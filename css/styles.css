@@ -46,3 +46,14 @@ footer {
   width: 100%;
   bottom: 0;
 }
+
+.home {
+  background-image: url(../public/Hogwarts.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-blend-mode: overlay;
+}
