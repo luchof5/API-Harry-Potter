@@ -135,7 +135,7 @@ footer {
 }
 
 #gryffindor {
-  background-image: url(../public/gryffindor.png);
+  background-image: url('../public/gryffindor.png');
 }
 
 #slytherin {
@@ -155,4 +155,33 @@ footer {
   display: flex;
   justify-content: space-evenly;
   margin: 50px 0;
+}
+
+.character-house {
+  margin: 20px auto;
+  text-align: center;
+  width: 60%;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px 1px;
+}
+
+.gryffindor {
+  background-color: #52021b;
+  color: #e79408;
+}
+
+.slytherin {
+  background-color: #173825;
+  color: #939ea4;
+}
+
+.hufflepuff {
+  background-color: #e79408;
+  color: #363634;
+}
+
+.ravenclaw {
+  background-color: #1d476f;
+  color: #141414;
 }
