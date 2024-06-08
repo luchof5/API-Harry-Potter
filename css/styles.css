@@ -76,8 +76,8 @@ footer {
   
 }
 
-.character {
-  background-color: #dbdbdb;
+.page-characters {
+  background-color: #fffffc;
 }
 
 .btn-characters {
@@ -98,32 +98,18 @@ footer {
   transform: scale(1.1);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  gap: 30px;
-  margin-bottom: 100px;
-}
-
-.card {
-  box-shadow: 0px 0px 20px #4d4d4d99;
-  border-radius: 10px;
-  width: 300px;
-}
-
-.imgCards {
-  width: 165px;
-  height: 244px;
-  border-radius: 10px;
+.house-filter {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
 }
 
 .house-filter .btn {
   background-size: cover;
   background-position: center;
-  width: 140px;
-  height: 160px;
-
+  width: 120px;
+  height: 140px;
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -133,6 +119,13 @@ footer {
   transform: scale(1.2);
   filter: drop-shadow(1px 1px 10px rgba(0,0,0,0.75));
 }
+
+.imgCards {
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+}
+
 
 #gryffindor {
   background-image: url('../public/gryffindor.png');
@@ -150,11 +143,27 @@ footer {
   background-image: url('../public/ravenclaw.png');
 }
 
-.house-filter {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 50px 0;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.card {
+  background-color: #ffd90011;
+  box-shadow: 0px 0px 20px #4d4d4d99;
+  border-radius: 10px;
+  width: 300px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
 }
 
 .character-house {
@@ -184,4 +193,16 @@ footer {
 .ravenclaw {
   background-color: #1d476f;
   color: #141414;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
 }
