@@ -5,13 +5,13 @@ const url = 'https://hp-api.onrender.com/api/characters';
 
 fetch(url)
     .then(response => response.json())
-    .then(data => showData(data));
+    .then(database => showData(database));
     
 
 function showData(data) {
     console.log(data);
     $divCards.innerHTML = '';
-    data.forEach(character => { 
+    data.forEach(character => {
         if(!character.image) {
             character.image = '../public/perfil.png'
         }
@@ -32,9 +32,14 @@ $btns.forEach($btn => {
         $divCards.innerHTML = '';
         fetch(url)
         .then(response => response.json())
-        .then(data => {
-            const filteredNumbers = data.filter(dat => dat.house.toLowerCase() === btnHouse)
-            showData(filteredNumbers)
+        .then(database => {
+            if (btnHouse === 'all') {
+                showData(database);
+            } else {
+               const filteredData = database.filter(data => data.house.toLowerCase() === btnHouse);
+            showData(filteredData);
+            }       
+            
         });
     });
 });

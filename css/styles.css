@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -55,6 +56,48 @@ footer {
   background-attachment: fixed;
 }
 
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(2px);
+    z-index: -1;
+
+}
+
+.intro {
+  font-weight: bolder;
+  font-size: 2rem;
+  background-color: #00000025;
+  
+}
+
+.character {
+  background-color: #dbdbdb;
+}
+
+.btn-characters {
+  border: none;
+  background-color: #343a40;
+  color: #dbdbdb;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 10px;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn-characters:hover {
+  background-color: #23282c;
+  transform: scale(1.1);
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -75,27 +118,36 @@ footer {
   border-radius: 10px;
 }
 
-button {
+.house-filter .btn {
   background-size: cover;
   background-position: center;
-  width: 140px; /* Ajusta el tamaño según sea necesario */
+  width: 140px;
   height: 160px;
+
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.house-filter .btn:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(1px 1px 10px rgba(0,0,0,0.75));
 }
 
 #gryffindor {
-  background-image: url(../public/gryffindor.jpg);
+  background-image: url(../public/gryffindor.png);
 }
 
 #slytherin {
-  background-image: url('../public/slytherin.jpg');
+  background-image: url('../public/slytherin.png');
 }
 
 #hufflepuff {
-  background-image: url('../public/hufflepuff.jpg');
+  background-image: url('../public/hufflepuff.png');
 }
 
 #ravenclaw {
-  background-image: url('../public/ravenclaw.jpg');
+  background-image: url('../public/ravenclaw.png');
 }
 
 .house-filter {
@@ -103,14 +155,4 @@ button {
   display: flex;
   justify-content: space-evenly;
   margin: 50px 0;
-}
-
-.house-filter li button {
-  border: none;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.house-filter li button:hover {
-  transform: scale(1.2);
 }
