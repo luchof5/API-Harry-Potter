@@ -1,8 +1,11 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
   font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -26,16 +29,16 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: #cccccc;
 }
 
 main {
   padding: 2em;
   text-align: center;
-}
-
-.intro {
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 footer {
@@ -66,14 +69,32 @@ footer {
     background: inherit;
     filter: blur(2px);
     z-index: -1;
-
 }
 
 .intro {
+  margin: 0 auto;
   font-weight: bolder;
-  font-size: 2rem;
-  background-color: #00000025;
-  
+  background-color: #ffffff59;
+  margin-bottom: 70px;
+  text-align: justify;
+  padding: 30px;
+  width: 100%; /* Ocupar todo el ancho de la pantalla */
+  box-sizing: border-box; /* Incluir el padding en el ancho */
+  position: relative; 
+  width: 80%;
+}
+
+.house-description {
+  padding: 20px;
+}
+
+.house-description li {
+  list-style: none;
+  text-align: left;
+}
+
+.house-section {
+  display: flex;
 }
 
 .page-characters {
@@ -126,7 +147,6 @@ footer {
   border-radius: 10px;
 }
 
-
 #gryffindor {
   background-image: url('../public/gryffindor.png');
 }
@@ -144,11 +164,13 @@ footer {
 }
 
 .grid {
+  width: 80%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .card {
@@ -156,6 +178,7 @@ footer {
   box-shadow: 0px 0px 20px #4d4d4d99;
   border-radius: 10px;
   width: 300px;
+
   view-timeline-name: --image;
   view-timeline-axis: block;
 
@@ -166,13 +189,17 @@ footer {
   animation-fill-mode: both;
 }
 
+.card h4 {
+  margin: 20px 0;
+}
+
 .character-house {
   margin: 20px auto;
   text-align: center;
-  width: 60%;
   font-weight: bold;
   border-radius: 5px;
   padding: 5px 1px;
+  width: 60%;
 }
 
 .gryffindor {
