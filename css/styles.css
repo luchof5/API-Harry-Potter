@@ -60,6 +60,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   gap: 30px;
+  margin-bottom: 100px;
 }
 
 .card {
@@ -72,4 +73,44 @@ footer {
   width: 165px;
   height: 244px;
   border-radius: 10px;
+}
+
+button {
+  background-size: cover;
+  background-position: center;
+  width: 140px; /* Ajusta el tamaño según sea necesario */
+  height: 160px;
+}
+
+#gryffindor {
+  background-image: url(../public/gryffindor.jpg);
+}
+
+#slytherin {
+  background-image: url('../public/slytherin.jpg');
+}
+
+#hufflepuff {
+  background-image: url('../public/hufflepuff.jpg');
+}
+
+#ravenclaw {
+  background-image: url('../public/ravenclaw.jpg');
+}
+
+.house-filter {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+
+.house-filter li button {
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.house-filter li button:hover {
+  transform: scale(1.2);
 }
