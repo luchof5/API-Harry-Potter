@@ -110,7 +110,7 @@ footer {
   text-align: left;
 }
 
-.house-description span {
+span {
   font-weight: bolder;
 }
 
@@ -195,6 +195,8 @@ footer {
   box-shadow: 0px 0px 20px #4d4d4d99;
   border-radius: 10px;
   width: 300px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
 
   view-timeline-name: --image;
   view-timeline-axis: block;
@@ -204,6 +206,10 @@ footer {
 
   animation-range: entry 25% cover 30%;
   animation-fill-mode: both;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card h4 {
@@ -250,3 +256,4 @@ footer {
     scale: 100%;
   }
 }
+
