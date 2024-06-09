@@ -72,20 +72,37 @@ footer {
 }
 
 .intro {
-  margin: 0 auto;
+  margin: auto auto;
   font-weight: bolder;
-  background-color: #ffffff59;
-  margin-bottom: 70px;
+  background-color: #ffffff6b;
+  margin: 60px auto;
   text-align: justify;
-  padding: 30px;
+  padding: 5px 30px 20px 30px;
   width: 100%; /* Ocupar todo el ancho de la pantalla */
   box-sizing: border-box; /* Incluir el padding en el ancho */
   position: relative; 
-  width: 80%;
+  width: 90%;
+  border-radius: 20px;
+}
+
+.intro h1, h2, h3 {
+  margin: 30px 0;
+  font-weight: bolder;
+}
+
+.intro p, li {
+  margin: 10px 0;
+}
+
+.house-section {
+  display: flex;
+  gap: 20px;
 }
 
 .house-description {
-  padding: 20px;
+  margin: 10px 0;
+  padding: 5px 30px 20px 30px;
+  border-radius: 10px;
 }
 
 .house-description li {
@@ -93,12 +110,12 @@ footer {
   text-align: left;
 }
 
-.house-section {
-  display: flex;
+.house-description span {
+  font-weight: bolder;
 }
 
 .page-characters {
-  background-color: #fffffc;
+  background-color: #f3f70a1a;
 }
 
 .btn-characters {
@@ -218,7 +235,7 @@ footer {
 }
 
 .ravenclaw {
-  background-color: #1d476f;
+  background-color: #4a90ce;
   color: #141414;
 }
 

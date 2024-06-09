@@ -16,10 +16,10 @@ function showData(data) {
             character.image = '../public/perfil.png'
         }
         if(character.house) {
-            $divCards.innerHTML += `<div class="card">
+            $divCards.innerHTML += `<div class="card ${character.house.toLowerCase()}" >
             <h4>${character.name}</h4>
             <img class="imgCards" src="${character.image}" alt="imagen de ${character.name}">
-            <p class="character-house ${character.house.toLowerCase()}">Casa: ${character.house}</p>
+            <p class="character-house">Casa: ${character.house}</p>
             </div>
             `;
         }
