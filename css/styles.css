@@ -105,9 +105,14 @@ footer {
   border-radius: 10px;
 }
 
-.house-description li {
-  list-style: none;
-  text-align: left;
+.house-description a {
+  text-decoration: none;
+  color: #036ee9;
+  font-style: italic;
+}
+
+.house-description a:hover {
+  text-decoration:underline;
 }
 
 span {
