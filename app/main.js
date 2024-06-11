@@ -14,9 +14,7 @@ function showData(data) {
     data.forEach(character => {
         let person = character.name.replace(' ', '+');
         let actor = 'Actor';
-        if (!character.image) {
-            character.image = '../public/perfil.png';
-        }
+
         if (character.gender === 'female') {
             actor = 'Actris';
         } 
@@ -24,12 +22,12 @@ function showData(data) {
             actor = 'Googlealo..';
         }
         if(character.house) {
-
             $divCards.innerHTML += `
-            <a href="https://www.google.com/search?q=${person}&oq=harr&gs_lcrp=EgZjaHJvbWUqDwgAEEUYOxiDARixAxiABDIPCAAQRRg7GIMBGLEDGIAEMgYIARBFGDkyCggCEAAYsQMYgAQyDQgDEAAYgwEYsQMYgAQyCggEEAAYsQMYgAQyBggFEEUYPDIGCAYQRRg9MgYIBxBFGD0yBggIEEUYQdIBCDEzNDFqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8" target="_blank" class="card ${character.house.toLowerCase()}">
+            <a href="https://www.google.com/search?q=${person}&oq=harr&gs_lcrp=EgZjaHJvbWUqDwgAEEUYOxiDARixAxiABDIPCAAQRRg7GIMBGLEDGIAEMgYIARBFGDkyCggCEAAYsQMYgAQyDQgDEAAYgwEYsQMYgAQyCggEEAAYsQMYgAQyBggFEEUYPDIGCAYQRRg9MgYIBxBFGD0yBggIEEUYQdIBCDEzNDFqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8" 
+            target="_blank" class="card ${character.house.toLowerCase()}">
                 <div>
                     <h4>${character.name}</h4>
-                    <img class="imgCards" src="${character.image}" alt="imagen de ${character.name}">
+                    <img class="imgCards" src="${character.image ? character.image : '../public/perfil.png'}" alt="imagen de ${character.name}">
                     <p class="character-house"><span>${character.house}</span></p>
                     <p class="character-house"><span>${actor}:</span> ${character.actor}</p>
                 </div>

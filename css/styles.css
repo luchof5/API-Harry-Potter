@@ -72,26 +72,25 @@ footer {
 }
 
 .intro {
-  margin: auto auto;
+  margin: auto;
   font-weight: bolder;
   background-color: #ffffff6b;
-  margin: 60px auto;
-  text-align: justify;
+  margin-bottom: 40px;
+  text-align: left;
   padding: 5px 30px 20px 30px;
-  width: 100%; /* Ocupar todo el ancho de la pantalla */
-  box-sizing: border-box; /* Incluir el padding en el ancho */
   position: relative; 
-  width: 90%;
+  width: 70%;
   border-radius: 20px;
 }
 
 .intro h1, h2, h3 {
-  margin: 30px 0;
+  margin-top: 20px;
   font-weight: bolder;
 }
 
 .intro p, li {
-  margin: 10px 0;
+  font-size: 1rem;
+  margin-top: 20px;
 }
 
 .house-section {
@@ -103,12 +102,12 @@ footer {
   margin: 10px 0;
   padding: 5px 30px 20px 30px;
   border-radius: 10px;
+  width: 33%;
 }
 
 .house-description a {
   text-decoration: none;
   color: #036ee9;
-  font-style: italic;
 }
 
 .house-description a:hover {
@@ -167,6 +166,7 @@ span {
   width: 150px;
   height: 200px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 #gryffindor {
