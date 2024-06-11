@@ -7,7 +7,7 @@ fetch(url)
     .then(response => response.json())
     .then(database => showData(database));
     
-
+// Tomamos los datos de la api y los mostramos en pantalla
 function showData(data) {
     console.log(data);
     $divCards.innerHTML = '';
@@ -37,6 +37,7 @@ function showData(data) {
     }); 
 };
 
+// Iteramos los botones para filtrar segun la casa Hogwarts
 $btns.forEach($btn => {
     $btn.addEventListener('click', (e) => {
         const btnHouse = e.currentTarget.id.toLowerCase();
