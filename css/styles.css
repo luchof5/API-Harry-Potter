@@ -54,7 +54,7 @@ footer {
 
 /* Pagina principal */
 .home {
-  background-image: url(../public/Hogwarts.jpg);
+  background-image: url(../assets/Hogwarts.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -171,19 +171,19 @@ span {
 }
 
 #gryffindor {
-  background-image: url('../public/gryffindor.png');
+  background-image: url('../assets/gryffindor.png');
 }
 
 #slytherin {
-  background-image: url('../public/slytherin.png');
+  background-image: url('../assets/slytherin.png');
 }
 
 #hufflepuff {
-  background-image: url('../public/hufflepuff.png');
+  background-image: url('../assets/hufflepuff.png');
 }
 
 #ravenclaw {
-  background-image: url('../public/ravenclaw.png');
+  background-image: url('../assets/ravenclaw.png');
 }
 
 .grid {
