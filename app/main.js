@@ -54,3 +54,19 @@ $btns.forEach($btn => {
         });
     });
 });
+
+// Mostrar el botón al desplazarse y desplazarse hacia arriba
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    scrollToTopBtn.classList.add("show");
+  } else {
+    scrollToTopBtn.classList.remove("show");
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
