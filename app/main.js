@@ -9,7 +9,6 @@ fetch(url)
     
 // Tomamos los datos de la api y los mostramos en pantalla
 function showData(data) {
-    console.log(data);
     $divCards.innerHTML = '';
     data.forEach(character => {
         let person = character.name.replace(' ', '+');

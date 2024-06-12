@@ -170,13 +170,6 @@ span {
   filter: drop-shadow(1px 1px 10px rgba(0,0,0,0.75));
 }
 
-.imgCards {
-  width: 150px;
-  height: 200px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
 #gryffindor {
   background-image: url('../public/gryffindor.png');
 }
@@ -207,7 +200,7 @@ span {
   background-color: #ffd90011;
   box-shadow: 0px 0px 20px #4d4d4d99;
   border-radius: 10px;
-  width: 300px;
+  width: 80%;
   text-decoration: none;
   transition: transform 0.3s ease;
 
@@ -227,6 +220,13 @@ span {
 
 .card h4 {
   margin: 20px 0;
+}
+
+.imgCards {
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .character-house {
@@ -271,10 +271,22 @@ span {
 }
 
 /* Media queries */
-
-/* @media (max-width: 1390px) {
-  .house-section {
-    flex-wrap: wrap;
-    justify-content: center;
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-} */
+  .house-filter .btn {
+    width: 110px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .house-filter .btn {
+    width: 90px;
+    height: 100px;
+  }
+}
