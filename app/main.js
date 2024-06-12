@@ -26,7 +26,7 @@ function showData(data) {
             target="_blank" class="card ${character.house.toLowerCase()}">
                 <div>
                     <h4>${character.name}</h4>
-                    <img class="imgCards" src="${character.image ? character.image : '../public/perfil.png'}" alt="imagen de ${character.name}">
+                    <img class="imgCards" src="${character.image ? character.image : '../assets/perfil.png'}" alt="imagen de ${character.name}">
                     <p class="character-house"><span>${character.house}</span></p>
                     <p class="character-house"><span>${actor}:</span> ${character.actor}</p>
                 </div>
