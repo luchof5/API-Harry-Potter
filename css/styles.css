@@ -1,3 +1,4 @@
+/* configuracion principal */
 * {
   margin: 0;
   padding: 0;
@@ -51,6 +52,7 @@ footer {
   bottom: 0;
 }
 
+/* Pagina principal */
 .home {
   background-image: url(../public/Hogwarts.jpg);
   background-repeat: no-repeat;
@@ -95,14 +97,19 @@ footer {
 
 .house-section {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
+  width: 100%;
 }
 
 .house-description {
+  flex: 1;
+  box-sizing: border-box;
   margin: 10px 0;
   padding: 5px 30px 20px 30px;
   border-radius: 10px;
-  width: 33%;
+  min-width: 250px;
 }
 
 .house-description a {
@@ -118,6 +125,7 @@ span {
   font-weight: bolder;
 }
 
+/* Pagina de los personajes */
 .page-characters {
   background-color: #f3f70a1a;
 }
@@ -262,3 +270,11 @@ span {
   }
 }
 
+/* Media queries */
+
+/* @media (max-width: 1390px) {
+  .house-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+} */
