@@ -74,10 +74,9 @@ footer {
 }
 
 .intro {
-  margin: auto;
+  margin: 40px auto;
   font-weight: bolder;
   background-color: #ffffff6b;
-  margin-bottom: 40px;
   text-align: left;
   padding: 5px 30px 20px 30px;
   position: relative; 
@@ -271,6 +270,12 @@ span {
 }
 
 /* Media queries */
+@media (max-width: 1400px) {
+  .card {
+    width: 90%;
+  }
+}
+
 @media (max-width: 1100px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -288,6 +293,13 @@ span {
   .house-filter .btn {
     width: 90px;
     height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .house-filter .btn {
+    width: 60px;
+    height: 70px;
   }
 }
 
