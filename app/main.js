@@ -1,5 +1,6 @@
 const $divCards = document.querySelector('.grid');
 const $btns = document.querySelectorAll('.btn');
+const $scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
 const url = 'https://hp-api.onrender.com/api/characters';
 
@@ -59,7 +60,7 @@ $btns.forEach($btn => {
 });
 
 // Mostrar el botón al desplazarse y desplazarse hacia arriba
-window.onscroll = function() {scrollFunction()};
+$scrollToTopBtn.addEventListener('click', scrollToTop);
 
 function scrollFunction() {
   const scrollToTopBtn = document.getElementById("scrollToTopBtn");
@@ -70,6 +71,8 @@ function scrollFunction() {
   }
 }
 
+onscroll = () => scrollFunction();
+
 function scrollToTop() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
+  scrollTo({top: 0, behavior: 'smooth'});
 }
