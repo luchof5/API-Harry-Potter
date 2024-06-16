@@ -61,26 +61,14 @@ footer {
   background-attachment: fixed;
 }
 
-.home::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: inherit;
-    filter: blur(2px);
-    z-index: -1;
-}
-
 .intro {
   margin: 40px auto;
   font-weight: bolder;
-  background-color: #ffffff6b;
+  background-color: #ffffff8c;
   text-align: left;
   padding: 5px 30px 20px 30px;
   position: relative; 
-  width: 70%;
+  width: 80%;
   border-radius: 20px;
 }
 
@@ -98,7 +86,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   width: 100%;
 }
 
